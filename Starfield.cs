@@ -20,7 +20,7 @@ namespace Lesson1
 
         private Star[] stars;
         private readonly Random random = new Random();
-        private Graphics? graphics;
+        private Graphics graphics;
 
         public Starfield()
         {
@@ -118,11 +118,11 @@ namespace Lesson1
             {
                 return;
             }
-            
+
             if (e.KeyCode == Keys.Escape)
             {
                 WindowState = FormWindowState.Normal;
-                FormBorderStyle = FormBorderStyle.FixedToolWindow;
+                FormBorderStyle = FormBorderStyle.FixedSingle;
                 btRun.Visible = true;
                 btClose.Visible = true;
                 menuStripSettings.Visible = true;

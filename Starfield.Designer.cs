@@ -102,6 +102,8 @@
             Controls.Add(btRun);
             Controls.Add(pbScreenSaver);
             Controls.Add(menuStripSettings);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "Starfield";
             Text = "Starfield";
             KeyDown += Starfield_KeyDown;
